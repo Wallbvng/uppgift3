@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+    <script src="script.js"> </script>
+</head>
+<body>
+    
+    <script>
+        // uppgift 2.
+        for(let i = 1 ; i <= 10 ; i++ ){
+            if(i % 2 !== 0){
+                document.write("O ");
+            } else{
+                document.write("x ");
+            }
+        }
+    </script>
+
+    <br><br>
+
+    <script>
+        //uppgift 3.
+        for(let i = 1 ; i <= 20 ; i++){
+            let randomSpaces = Math.floor(Math.random() * 5) +1;
+            document.write("O" + "&nbsp;".repeat(randomSpaces));
+
+        }
+
+
+        let cityNames = ["Kiruna", "Uppsala", "Malmö", "Göteborg", "Stockholm"];
+
+for (let i = 0; i < cityNames.length; i++) {
+    let city = cityNames[i]; 
+    
+    for (let j = 0; j < city.length; j++) {
+        console.log(city[j]); 
+    }
+    
+    console.log(" "); 
+}
+
+
+    </script>
+        
+</body>
+</html>
